@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Music Player</title> 
+</head>
+
+<body>
+    <!-- <pre>Cannot GET /songs/127.0.0.1:5500/cover.jpeg</pre> -->
+    <div class="conatiner flex bg-black">
+        <div class="left">
+
+            <div class="home bg-grey rounded m1 p1">
+                <div class="logo"><img class="invert" src="logo.svg" alt="logo"></div>
+                <ul>
+                    <li class="close">
+                        <img class="invert home" src="home.svg" alt="home">Home
+                    </li>
+                    <li><img class="invert search" src="search.svg" alt="search">Search</li>
+                </ul>
+
+
+            </div>
+            <div class="library bg-grey rounded m1 p1">
+                <div class="heading">
+                    <img class="invert" src="your-playlist.svg" alt="your-playlist">
+                    <h2>
+                        Your Library
+                    </h2>
+                </div>
+                <div class="songList scroller">
+                    <ul>
+
+                    </ul>           
+                </div>
+                <div class="footer">
+                    <a href="https://www.spotify.com/in-en/legal/" id="" data-encore-id="textLink">
+                        <span data-encore-id="type">Legal</span></a>
+                    <a href="https://www.spotify.com/in-en/safetyandprivacy/" id="" data-encore-id="textLink">
+                        <span data-encore-id="type">Safety & Privacy Center</span></a>
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/" id="" data-encore-id="textLink">
+                        <span data-encore-id="type">Privacy Policy</span></a>
+                    <!-- <a href="https://www.spotify.com/in-en/legal/cookies-policy/" id="" data-encore-id="textLink"> -->
+                    <!-- <span data-encore-id="type">Cookies</span></a> -->
+                    <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3" id="" data-encore-id="textLink">
+                        <span data-encore-id="type">About Ads</span></a>
+                    <a href="https://www.spotify.com/in-en/accessibility/" id="" data-encore-id="textLink">
+                        <span data-encore-id="type">Accessibility</span></a>
+                    <!-- <a draggable="false" href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener"> -->
+                    <!-- <span data-encore-id="text">Cookies</span></a> -->
+                </div>
+            </div>
+
+        </div>
+        <div class="right">
+            <header>
+                
+                <div class="navbar bg-grey rounded">
+                    
+                    <img class="hamburger" src="hamburger.svg" alt="hamburger icon">
+                    
+                    <div class="arrow">
+                        <img src="arrowleft.svg" alt="leftarrow">
+
+                        <img src="arrowright.svg" alt="right srrow">
+                    </div>
+                    <div class="button">
+                        <button class="signupbtn">SignUp</button>
+                        <button class="signinbtn">SignIn</button>
+                    </div>
+                </div>
+                <div class="spotifyPlaylist">
+                    <h1>Playlist</h1>
+                    <div class="cardContainer scroller">
+                        <div   data-folder="favourite" class="card">
+                            <div class="playbutton">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"
+                                    color="#7cd22d" fill="solid green">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                            <img src="http://127.0.0.1:5500/songs/favourite/cover.jpeg" alt="">
+                            <h2>Favourite songs.</h2>
+                            <p>The perfect soundtrack to those long nights..</p>
+                        </div>
+
+                        <div data-folder="reels" class="card">
+                            <div  class="playbutton">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"
+                                    color="#7cd22d" fill="solid green">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                            <img src="http://127.0.0.1:5500/songs/reels/cover.jpeg" alt="">
+                            <h2>Sample Songs Reels</h2>
+                            <p>Sample soundtrack.</p>
+                        </div>
+
+                        <div  data-folder="fuckkkkk" class="card">
+                            <div class="playbutton">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"
+                                    color="#7cd22d" fill="solid green">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                            <img src="http://127.0.0.1:5500/songs/fuckkkkk/cover.jpeg" alt="">
+                            <h2>Bollywood Songs.</h2>
+                            <p>BollyMUsic Tracks</p>
+                        </div>
+
+                        <div  data-folder="Heeheee" class="card">
+                            <div class="playbutton">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"
+                                    color="#7cd22d" fill="solid green">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                            <img src="http://127.0.0.1:5500/songs/Heeheee/cover.jpeg" alt="">
+                            <h2>Bhajan Songs.</h2>
+                            <p>Popular Bhajan Tracks</p>
+                        </div>
+
+                        <div  data-folder="classical" class="card">
+                            <div class="playbutton">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="35" height="35"
+                                    color="#7cd22d" fill="solid green">
+                                    <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5" />
+                                    <path
+                                        d="M9.5 11.1998V12.8002C9.5 14.3195 9.5 15.0791 9.95576 15.3862C10.4115 15.6932 11.0348 15.3535 12.2815 14.6741L13.7497 13.8738C15.2499 13.0562 16 12.6474 16 12C16 11.3526 15.2499 10.9438 13.7497 10.1262L12.2815 9.32594C11.0348 8.6465 10.4115 8.30678 9.95576 8.61382C9.5 8.92086 9.5 9.6805 9.5 11.1998Z"
+                                        fill="currentColor" />
+                                </svg>
+                            </div>
+                            <img src="http://127.0.0.1:5500/songs/classical/cover.jpeg" alt="">
+                            <h2>Classical</h2>
+                            <p>Indi Classical Songs.</p>
+                        </div>
+
+
+                    </div>
+                </div>
+            </header>
+            <div class="playbar bd-grey rounded">
+                <div class="seekbar">
+                    <div class="circle">
+
+                    </div>
+                </div>
+                
+
+                    
+
+                    <div class="songbutton">
+                        <img id="previous" class="previous" src="prevsong.svg" alt="previous song">
+                        <img id="play" src="pause.svg" alt="play button">
+                        <!-- <img id="pause" src="pause.svg" alt="pause button"> -->
+                        <img id="next" class="next" src="nextsong.svg" alt="next">
+                    </div>
+                    <div class="volume flex align-center justify-center"  style="margin: 4px;"> 
+                        <img class="m1" src="volume.svg" alt="volume bar">
+                    <div class="range">
+                        <input type="range" name="range" class="range">
+                    </div>
+                    
+                    </div>
+
+                    <div class="abovebar">
+                        <div class="songinfo" style="width: 58rem;"></div>
+                        
+                        
+                        
+                        <div class="songtime"></div>
+                    </div>    
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

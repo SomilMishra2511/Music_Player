@@ -1,0 +1,47 @@
+.border{
+    border: 2px solid red;
+    margin: 3px;
+}
+.flex{
+    display: flex;
+}
+.justify-center{
+    justify-content: center;
+}
+.align-center{
+    align-items: center;
+}
+.rounded{
+    border-radius:8px;
+}
+.m1{
+    margin: 5px;
+}
+.p1{
+    padding: 10px;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.invert
+{
+    filter: invert(1);
+}
+.bg-grey{
+    background-color: #3a3737;
+}
+.scroller {
+        height: 60vh;
+        overflow-y: scroll;
+        scrollbar-color: #333 #555; /* dark gray thumb and track */
+        scrollbar-width: thin; /* or a specific width value, e.g. 10px */
+        padding-left: 10px; /* move the scroller to the left edge */
+}
+.arrow{
+    margin-top: 12px;
+    cursor: pointer;
+}
+.button{
+    margin-top:-12px;
+}
